@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SWTestAcademy">
+
+    <listeners>
+        <listener class-name="com.swtestacademy.TestListener"/>
+    </listeners>
+
+
+    <test name="Tests" thread-count="3" parallel="classes">
+        <classes>
+            <class name="com.swtestacademy.LoginTests"/>
+            <class name="com.swtestacademy.PaymentTests"/>
+        </classes>
+    </test>
+
+
+</suite>
